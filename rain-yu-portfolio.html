@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rain Yu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-green-50 font-serif min-h-screen flex flex-col">
+
+  <!-- ===== HEADER ===== -->
+  <header class="w-full border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-8 py-4 flex items-center gap-8">
+      <!-- Logo -->
+      <div class="flex items-center gap-2 mr-auto">
+        <!-- Hollow Knight icon placeholder -->
+        <img class="h-8 w-8 rounded-full object-cover" src="./images/hollow_knignt.png" alt="Logo">
+        <span class="font-medium text-gray-800">Rain Yu</span>
+      </div>
+      <!-- Nav -->
+      <nav class="flex gap-6 text-sm text-gray-700">
+        <a href="#" class="hover:text-gray-900 transition-colors">About</a>
+        <a href="#" class="hover:text-gray-900 transition-colors">Interests</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="flex-1 flex items-center justify-center px-8 py-20 bg-green-50 ">
+    <div class="max-w-5xl w-full">
+
+      <!-- About row -->
+      <section id="about" class="flex items-center gap-12 max-w-7xl w-full mb-12">
+        <!-- 左邊：圖片 -->
+        <div class="flex justify-center">
+          <div 
+            class="w-80 h-80 rounded-full border-4 border-white shadow-lg bg-cover bg-center"
+            style="background-image: url('./images/hollow_knignt.png');"
+          ></div>
+        </div>
+  
+        <!-- 右邊：自我介紹 -->
+        <div class="space-y-4">
+          <h2 class="text-5xl font-bold">Rain Yu</h2>
+          <p class="text-lg text-slate-700">
+              我是大同大學資工系的學生，對新事物充滿強烈好奇心。
+              我的主要興趣是人工智慧與網頁開發，生活圍繞著程式與音樂。
+            </p>
+          <p class="text-lg text-slate-700">
+              我目前擔任大同大學科學開源服務社的資訊長，並且擔任程式設計一/二助教。
+              雖然工作有挑戰性，我很享受從中學習和成長。
+            </p>
+          <div class="flex items-center justify-end gap-6 text-4xl text-slate-700 pt-2">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rainyu_05_10" target="_blank" class="hover:text-gray-500 transition-colors">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/RainYu0510" target="_blank" class="hover:text-gray-500 transition-colors">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <!-- HackMD -->
+            <a href="https://hackmd.io/@RainYu0510" target="_blank" class="hover:opacity-70 transition-opacity">                     
+              <i class="fa-regular fa-file-lines"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== INTERESTS CARDS ===== -->
+      <section id="interests" class="mt-10 pt-4 grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+
+        <div class="rounded-2xl bg-[#d4e8de] px-6 py-7 border border-gray-200 shadow-sm flex flex-col justify-between transform transition duration-300 hover:-translate-y-2 hover:scale-105">
+          <div>
+            <p class="text-xs text-[#4d8c6e] font-medium tracking-wide mb-1">Interest</p>
+            <h3 class="text-xl text-gray-900 mb-2">Foods</h3>
+            <p class="text-sm text-gray-700 leading-relaxed mb-5">我是盤子，也是吃貨</p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-3">
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">Sushi</span>
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">Pizza</span>
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">BBQ</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-[#e6e0d2] px-6 py-7 border border-gray-200 shadow-sm flex flex-col justify-between transform transition duration-300 hover:-translate-y-2 hover:scale-105">
+          <div>
+            <p class="text-xs text-[#7a6a4a] font-medium tracking-wide mb-1">Interest</p>
+            <h3 class="text-xl text-gray-900 mb-2">Games</h3>
+            <p class="text-sm text-gray-700 leading-relaxed mb-5">平常都玩這些鬼混的，但好爽哦</p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-3">
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">Cyberpunk 2077</span>
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">slay the spire 2</span>
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">Apex</span>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-[#dbd8ef] px-6 py-7 border border-gray-200 shadow-sm flex flex-col justify-between transform transition duration-300 hover:-translate-y-2 hover:scale-105">
+          <div>
+            <p class="text-xs text-[#6156a0] font-medium tracking-wide mb-1">Interest</p>
+            <h3 class="text-xl text-gray-900 mb-2">Music</h3>
+            <p class="text-sm text-gray-700 leading-relaxed mb-5">睡覺也要聽，太幸福了</p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-3">
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">Jay Chou</span>
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">The 1975</span>
+            <span class="text-xs bg-white text-gray-800 px-2 py-1 rounded-full border border-gray-200 transition hover:bg-gray-100 hover:text-gray-900 cursor-pointer">Radiohead</span>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2026 Rain Yu. All rights reserved.
+  </footer>
+
+</body>
+</html>
